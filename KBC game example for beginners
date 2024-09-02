@@ -1,0 +1,29 @@
+play = input("Do you want to play? ").lower()
+money_won = 0
+
+if play != "no":
+    print("Let's start the game.")
+
+    q1 = input("What is the full form of CPU? ").lower()
+    if q1 == "central processing unit":
+        money_won += 2000
+        print(f"Correct. You have won Rs. {money_won}")
+    else:
+        print("Incorrect. You are out of the tournament.")
+        quit()
+
+    q2 = input("What is the capital city of Nepal? ").lower()
+    if q2 == "kathmandu":
+        money_won += 3000
+        print(f"Correct. You have won Rs. {money_won}")
+    else:
+        print(f"Incorrect. You have won Rs. {money_won}")
+        quit()
+
+    q3 = input("What is the height of Mt. Everest in meters? ")
+    if float(q3) == 8848.48:
+        money_won += 4000
+        print(f"Correct. You have won Rs. {money_won}")
+    else:
+        print(f"Incorrect. You have won Rs. {money_won}")
+        quit()
